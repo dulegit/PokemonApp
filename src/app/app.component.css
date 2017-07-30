@@ -1,0 +1,42 @@
+ul {
+	padding: 0;
+	list-style: none;
+}
+ul li {
+	padding: 0.5rem;
+}
+ul li:nth-child(even) {
+	background-color: #ebebeb;
+}
+.pokemonSearch {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin-top: 2rem;
+}
+.pokemonSearch h3,
+.pokemonSearch input,
+.pokemonSearch button {
+	padding: 1rem;
+}
+.pokemonSearch h3 {
+	display: flex;
+	flex-basis: 400px;
+    align-items: center;
+	margin: 0 1rem 0 0;
+	color: #0b85a3;
+}
+.pokemonSearch button {
+	background-color: #0b85a3;
+	color: #fff;
+	border: none;
+}
+.pokemonDetails h1 {
+	background-color: #0b85a3;
+	color: #fff;
+	padding: 1rem;
+}
+.pokemonDetails img {
+	border: 2px solid #0b85a3;
+	border-radius: 4px;
+}
