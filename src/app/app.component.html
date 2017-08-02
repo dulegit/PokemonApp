@@ -15,11 +15,16 @@
 
       <div class="pokemonDetails">
         <div>
-          <h1>{{pokemon.name}}</h1>
-          <img src="{{pokemon.sprites.front_default}}">
+          <h1 *ngIf="pokemon.name" >{{pokemon.name}}</h1>
+          <div *ngIf="pokemon.name">
+            <img src="{{pokemon.sprites.front_default}}">
+          </div>
           <ul>
             <li *ngFor="let s of pokemon.stats">{{s.stat.name}} : {{s.base_stat}}</li>
           </ul>
+          <div *ngIf="pokemon.status">
+            <h1>{{termValue}} does not exist!</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -34,9 +39,10 @@
         <ul>
           <li *ngFor="let c of pokemonColor.pokemon_species">{{c.name}}</li>
         </ul>
+        <div *ngIf="pokemonColor.status">
+          <h1>{{colorValue}} color does not exist!</h1>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-
