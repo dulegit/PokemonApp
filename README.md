@@ -1,3 +1,20 @@
+# How to run PokemonApp
+Download project to your computer
+
+Install <a href="https://nodejs.org/" target="_blank">node</a>
+
+Update <a href="https://docs.npmjs.com/getting-started/installing-node">npm</a> to latest
+
+Open cmd(Windows) or Linux Command line and instal Angular globaly 'npm install -g @angular/cli'
+
+Navigate trough cmd to folder where you download the project (cd PokemonApp).
+
+Run command 'ng serve'
+
+Open in your favorite browser 'http://localhost:4200/'
+
+That's it :)
+
 # PokemonApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
